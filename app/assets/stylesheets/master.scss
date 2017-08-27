@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
 @import "bootstrap";
 
 .clear {
@@ -17,7 +18,8 @@ p{
   white-space:nowrap;
   overflow: hidden;
   width: 30em;
-  animation: type 5s steps(50, end) 1;  
+  animation: type 5s steps(50, end) 1;
+  font-family: 'amaranthregular' , sans-serif;  
 }
 
 /* let's animate, it's super easy */
@@ -58,5 +60,15 @@ span{
   color: #40e0d0;
   font-size: 25px;
   border-bottom: 1px solid #1b9387;
+  font-family: 'amaranthregular' , sans-serif;
 }
 
+h1 {
+  font-family: 'amaranthregular' , sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: 'amaranthregular' , sans-serif;
+}
