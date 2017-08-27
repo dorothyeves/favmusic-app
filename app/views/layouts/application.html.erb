@@ -17,20 +17,24 @@
       Favorite Music
       </div>
       <% end %>
-      <div class="col-6">
+
+      <div class="col-4 offset-1">
         <!--Hi folks, I'm goping to write code for typing animation  -->
         <p>Who is your Favorite Music Artist?<span>|</span></p>
       <!-- This is the text we are going to animate, so let's style animation-->
       </div>
-
-      <div class="col-3 links">
+      <br class="clear" />
+      
+      
+    </header>
+      <div class="container">
+        <div class="row col-6 col-md-4 links mx-auto addartist">
+    
            
        <!-- Button trigger modal -->
         <%= link_to 'Add Artist' , '#', data: {toggle: 'modal' , target: '#myModal'} %>
-      </div>
-    </header>
-
-
+        </div>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -45,12 +49,10 @@
           <%= simple_form_for Artist.new do |f| %>
             <div class="modal-body">
             
-              <%= f.input :name %>
-              <%= f.input :description %>
+              <%= f.input :name, label: "Who is your favorite music artist?" %>
+              <%= f.input :description, label: "Why are they your favorite?" %>
             </div>
-              <%= f.submit 'Submit' , class: 'btn btn-danger' %>
-            
-            </div>
+          
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <%= f.submit 'Submit' , class: 'btn btn-danger' %>

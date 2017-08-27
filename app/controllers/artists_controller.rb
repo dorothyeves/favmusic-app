@@ -5,6 +5,7 @@ class ArtistsController < ApplicationController
 
   def new
     @artist = Artist.new
+
   end
 
   def create
@@ -14,6 +15,8 @@ class ArtistsController < ApplicationController
     end
     redirect_to root_path
   end
+
+  
 
   private
 
