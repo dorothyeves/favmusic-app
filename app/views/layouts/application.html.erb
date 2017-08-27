@@ -4,16 +4,19 @@
     <title>Favmusic</title>
     <%= csrf_meta_tags %>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header class="row">
-      <div class="col-3">
+      <div class="col-3 links">
+        <%= link_to root_path do %>
       Favorite Music
       </div>
-      
+      <% end %>
       <div class="col-6">
         <!--Hi folks, I'm goping to write code for typing animation  -->
         <p>Who is your Favorite Music Artist?<span>|</span></p>
@@ -21,7 +24,7 @@
       </div>
 
       <div class="col-3 links">
-        <%= link_to 'Add Artist' , '#' %>
+        <%= link_to 'Add Artist' , new_artist_path %>
       </div>
     </header>
 
@@ -31,10 +34,24 @@
     &nbsp;
     &nbsp;
     &nbsp;
+    
     <br class="clear" />
 
-    
-      
-    <%= yield %>
+      <div class="container"> 
+       <%= yield %>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+            Favorite Music Artist Web App
+            </div>
+            <div class="col-4">
+              Designed by Dorothy Eves
+            </div>
+          </div>
+        </div>
+      </div>    
   </body>
 </html>
