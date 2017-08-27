@@ -3,3 +3,60 @@
 .clear {
   clear: both;
 }
+
+/* At first let's give some style*/
+body{
+  background: #fff;
+  color: #40e0d0;
+}
+
+/* font-size, positioning, visibility*/
+p{
+  font-size: 25px;
+  margin: 10px;
+  white-space:nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 5s steps(50, end) 1;  
+}
+
+/* let's animate, it's super easy */
+@keyframes type{
+  from{ width: 0;}
+}
+/*looks like something is wrong, Fixed!!! */
+
+/*let's make it more realistic, so I added span tag, let's animate span*/
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  to{ opacity: .0;}
+}
+
+/*That's it. Enjoy!!! :) */
+
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #35e3cd;
+  -webkit-box-shadow: 1px 1px 2px 0 #35e3cd;
+  box-shadow: 1px 1px 2px 0 #35e3cd;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #77f0e1 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+.links {
+  padding-top: 20px;
+}
+
+.links a {
+  color: #40e0d0;
+  font-size: 25px;
+  border-bottom: 1px solid #1b9387;
+}
+
