@@ -1,8 +1,11 @@
-
+<% @artists.each do |artist| %>
+    <div class="container">
 <div class="booyah-box col-10 offset-1">
-<h1 class="col-10 offset-1"><%= @artist.name %></h1>
-<p class="col-10 offset-1"><%= @artist.description %><span>|</span></p>
+<h1 class="col-10 offset-1"><%= artist.name %></h1>
+<p class="col-10 offset-1"><%= artist.description %><span>|</span></p>
 </div>
+    </div>
+<% end %>
 
 
 

@@ -1,11 +1,12 @@
 class ArtistsController < ApplicationController
   def index
-    @artist = Artist.order("RANDOM()").first
+    @artists = Artist.all.order("RANDOM()")
+
   end
 
+  
   def new
     @artist = Artist.new
-
   end
 
   def create
@@ -16,8 +17,7 @@ class ArtistsController < ApplicationController
     redirect_to root_path
   end
 
-  
-
+ 
   private
 
   def artist_params
