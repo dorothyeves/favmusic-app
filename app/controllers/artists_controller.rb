@@ -17,6 +17,9 @@ class ArtistsController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @artist2 = Artist.all
+  end
  
   private
 

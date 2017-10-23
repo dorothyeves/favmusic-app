@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails favmusic: development" uuid="c067dab9-a0c6-446d-924a-e002dde066eb">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="Rails favmusic: production" uuid="e13e2c90-e5e8-4d49-b5c6-3fd8b7f35884">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="Rails favmusic: test" uuid="78f8ec88-2424-43bb-a92f-ec2dfdd80953">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+  </component>
+</project>

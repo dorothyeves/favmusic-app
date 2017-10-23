@@ -1,0 +1,7 @@
+<h1> Enter Your Favorite Music Artist and Song Title</h1>
+<%= simple_form_for @song do |f| %>
+  <%= f.input :name %>
+  <%= f.input :song %>
+  <br />
+  <%= f.submit 'Submit' , class: 'btn btn-danger' %>
+<% end %>
